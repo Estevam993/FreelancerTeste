@@ -36,6 +36,26 @@ body.loginBody {
   width: 286px;
 }
 
+#username {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+  outline: none;
+  width: 205px;
+}
+
+#Cpassword {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+  outline: none;
+  width: 188px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -46,6 +66,16 @@ body {
   background-image: url("../images/background1920.png");
 }
 
+@media (max-width: 1080px) {
+  body {
+    background-image: url("../images/background/background1440");
+  }
+}
+@media (max-width: 780px) {
+  body {
+    background-image: url("../images/background/background780");
+  }
+}
 .main {
   min-height: 100vh;
   display: flex;
