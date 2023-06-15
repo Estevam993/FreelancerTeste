@@ -2,6 +2,14 @@ body.loginBody {
   backdrop-filter: blur(15px);
 }
 
+#cadastro a {
+  text-decoration: none;
+  color: white;
+}
+#cadastro a:hover {
+  color: black;
+}
+
 .loginBox {
   width: 500px;
   height: 400px;
@@ -36,6 +44,18 @@ body.loginBody {
   width: 286px;
 }
 
+body.loginBody {
+  backdrop-filter: blur(15px);
+}
+
+#login a {
+  text-decoration: none;
+  color: white;
+}
+#login a:hover {
+  color: black;
+}
+
 #username {
   background-color: transparent;
   color: white;
@@ -66,13 +86,19 @@ body {
   background-image: url("../images/background1920.png");
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1120px) {
   body {
+    background-image: url("../images/background/background1440");
+  }
+  body.loginBody {
     background-image: url("../images/background/background1440");
   }
 }
 @media (max-width: 780px) {
   body {
+    background-image: url("../images/background/background780");
+  }
+  body.loginBody {
     background-image: url("../images/background/background780");
   }
 }
@@ -84,6 +110,7 @@ body {
 }
 
 #headerIndex {
+  position: static;
   color: white;
   width: 100%;
   height: 65px;
@@ -106,25 +133,78 @@ body {
 #headerIndex .logo:hover {
   transform: scale(1.2);
 }
-#headerIndex .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+#headerIndex .logo i {
+  color: white;
+  text-decoration: none;
 }
-#headerIndex #login a {
+
+#buttons {
+  width: 200px;
+  display: none;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 65px;
+  left: 1720px;
+  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.753);
+  transition: 0.2s;
+  margin-right: auto;
+}
+#buttons:hover {
+  background-color: rgba(145, 145, 145, 0.397);
+}
+@media (max-width: 1820px) {
+  #buttons {
+    left: 1620px;
+  }
+}
+@media (max-width: 1720px) {
+  #buttons {
+    left: 1520px;
+  }
+}
+@media (max-width: 1620px) {
+  #buttons {
+    left: 1420px;
+  }
+}
+@media (max-width: 1520px) {
+  #buttons {
+    left: 1320px;
+  }
+}
+@media (max-width: 1420px) {
+  #buttons {
+    left: 1220px;
+  }
+}
+@media (max-width: 1320px) {
+  #buttons {
+    left: 1120px;
+  }
+}
+@media (max-width: 1220px) {
+  #buttons {
+    left: 1020px;
+  }
+}
+@media (max-width: 1120px) {
+  #buttons {
+    left: 920px;
+  }
+}
+#buttons #login a {
   text-decoration: none;
   color: white;
 }
-#headerIndex #login a:hover {
+#buttons #login a:hover {
   color: black;
 }
-#headerIndex #cadastro a {
+#buttons #cadastro a {
   text-decoration: none;
   color: white;
 }
-#headerIndex #cadastro a:hover {
+#buttons #cadastro a:hover {
   color: black;
 }
 
@@ -134,8 +214,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-#content {
+#container #content {
   background-color: rgba(0, 0, 0, 0.733);
   width: 900px;
   height: 620px;
@@ -143,52 +222,50 @@ body {
   border-radius: 50px;
   transition: 0.3s;
 }
-#content:hover {
+#container #content:hover {
   transform: scale(1.03);
   background-color: rgba(39, 39, 39, 0.733);
 }
-
-.market1 {
+#container #content .market1 {
   height: 350px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
 }
-
-#info1 {
+#container #content #info1 {
   border: 1px solid white;
   border-radius: 10px;
   height: 200px;
   width: 500px;
   transition: 0.2s;
 }
-#info1:hover {
+#container #content #info1:hover {
   transform: scale(1.03);
 }
-
-.img1 {
+#container #content .img1 {
   width: 300px;
   height: 250px;
   padding-bottom: 10px;
 }
-
-.market2 {
+#container #content .market2 {
   height: 350px;
   display: flex;
   justify-content: space-evenly;
   padding: 35px;
 }
-
-#info2 {
+#container #content #info2 {
   border: 1px solid white;
   border-radius: 10px;
   height: 150px;
   width: 400px;
   transition: 0.2s;
 }
-#info2:hover {
+#container #content #info2:hover {
   transform: scale(1.03);
+}
+#container #content .enviar {
+  justify-content: end;
 }
 
 #inputs {
@@ -233,10 +310,6 @@ body {
   width: 250px;
 }
 
-.enviar {
-  justify-content: end;
-}
-
 #footerIndex {
   color: white;
   width: 100%;
@@ -250,11 +323,6 @@ body {
 }
 #footerIndex:hover {
   background-color: rgba(145, 145, 145, 0.397);
-}
-
-.logo i {
-  color: white;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

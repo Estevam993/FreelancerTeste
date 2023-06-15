@@ -18,21 +18,29 @@
                 <h1 class="logo">
                     <i class="bi bi-rocket-takeoff"></i>
                 </h1>
-            
-            <div class="buttons pe-3">
-                <button class=" btn btn-outline-light" id="login">
-                    <a href="./login/login.html">
-                        Login <i class="bi bi-box-arrow-in-right"></i> 
-                    </a>
-                </button>
 
-                <button class="btn btn-outline-light" id="cadastro">
-                    <a href="./cadastro/cadastro.html">
-                        Cadastro <i class="bi bi-card-checklist"></i>
-                    </a>
-                </button>
+            
+            <div id="burg" class="pe-5">
+                <button class="btn btn-outline-light" id="menuBurg"><i class="bi bi-list"></i></i></button>
+
+                
+                
             </div>
+            
         </header>
+        <div class="buttons pe-3" id="buttons">
+            <button class=" btn btn-outline-light" id="login">
+                <a href="./login/login.html">
+                    Login <i class="bi bi-box-arrow-in-right"></i> 
+                </a>
+            </button>
+
+            <button class="btn btn-outline-light" id="cadastro">
+                <a href="./cadastro/cadastro.html">
+                    Cadastro <i class="bi bi-card-checklist"></i>
+                </a>
+            </button>
+        </div>
 
         <div id="container">
             <div id="content" class="m-auto pt-10">
@@ -95,5 +103,21 @@
 
 
     <script src="./node_modules/bootstrap/js/dist/"></script>
+    <script>
+        var menu = document.getElementById("burg")
+        var buttons = document.getElementById("buttons")
+
+        menu.addEventListener("click",function(){
+            if(buttons.style.display == "none"){
+                buttons.style.display = "block"
+            }else{
+                buttons.style.display = "none"
+            }
+        
+        })
+       
+
+
+    </script>
 </body>
 </html>

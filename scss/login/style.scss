@@ -3,6 +3,13 @@
 body.loginBody{
     backdrop-filter: blur(15px);
 }
+#cadastro a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color:black;
+    }
+}
 
 .loginBox{
     width: 500px;
