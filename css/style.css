@@ -2,16 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
 }
 
 body {
   background-image: url("../images/background1920.png");
+  height: 100%;
+  backdrop-filter: blur(15px);
 }
 
 #headerIndex {
   color: white;
-  width: auto;
+  width: 100%;
   height: 65px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +33,7 @@ body {
 #headerIndex .logo:hover {
   transform: scale(1.2);
 }
-#headerIndex.buttons {
+#headerIndex .buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -40,18 +41,22 @@ body {
 }
 
 #container {
-  height: auto;
-  width: auto;
   display: flex;
   margin-top: 20px;
+  color: white;
+  margin-bottom: 215px;
 }
 
 #content {
   background-color: rgba(39, 39, 39, 0.733);
   width: 900px;
-  height: 900px;
+  height: 620px;
   display: block;
   border-radius: 50px;
+  transition: 0.3s;
+}
+#content:hover {
+  transform: scale(1.03);
 }
 
 .market1 {
@@ -89,7 +94,7 @@ body {
 #info2 {
   border: 1px solid white;
   border-radius: 10px;
-  height: 125px;
+  height: 150px;
   width: 400px;
   transition: 0.2s;
 }
@@ -100,6 +105,7 @@ body {
 #inputs {
   height: 400px;
   width: 400px;
+  display: block;
 }
 
 #basic-Email {
@@ -136,6 +142,25 @@ body {
   border-bottom: 1px solid white;
   outline: none;
   width: 250px;
+}
+
+.enviar {
+  justify-content: end;
+}
+
+#footerIndex {
+  color: white;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.753);
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 0.4s;
+}
+#footerIndex:hover {
+  background-color: rgba(145, 145, 145, 0.397);
 }
 
 /*# sourceMappingURL=style.css.map */
