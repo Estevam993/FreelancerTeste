@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-image: url("../images/background1920.png");
+}
+
+#headerIndex {
+  color: white;
+  width: auto;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.753);
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 0.4s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#headerIndex:hover {
+  background-color: rgba(145, 145, 145, 0.397);
+}
+#headerIndex .logo {
+  transition: 0.3s;
+  cursor: pointer;
+}
+#headerIndex .logo:hover {
+  transform: scale(1.2);
+}
+#headerIndex.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: auto;
+  width: auto;
+  display: flex;
+  margin-top: 20px;
+}
+
+#content {
+  background-color: rgba(39, 39, 39, 0.733);
+  width: 900px;
+  height: 900px;
+  display: block;
+  border-radius: 50px;
+}
+
+.market1 {
+  height: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+#info1 {
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 200px;
+  width: 500px;
+  transition: 0.2s;
+}
+#info1:hover {
+  transform: scale(1.03);
+}
+
+.img1 {
+  width: 300px;
+  height: 250px;
+  padding-bottom: 10px;
+}
+
+.market2 {
+  height: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 35px;
+}
+
+#info2 {
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 125px;
+  width: 400px;
+  transition: 0.2s;
+}
+#info2:hover {
+  transform: scale(1.03);
+}
+
+#inputs {
+  height: 400px;
+  width: 400px;
+}
+
+#basic-Email {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+}
+
+#email {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+  outline: none;
+  width: 275px;
+}
+
+#basic-Message {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+}
+
+#message {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+  outline: none;
+  width: 250px;
+}
+
+/*# sourceMappingURL=style.css.map */
