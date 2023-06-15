@@ -1,0 +1,41 @@
+
+
+body.loginBody{
+    backdrop-filter: blur(15px);
+}
+
+.loginBox{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.733);;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 50px;
+    &:hover{
+        transform: scale(1.03);
+        background-color:rgba(39, 39, 39, 0.733);
+    }
+}
+
+#inputsLogin{
+    min-height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    #password{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid white ;
+    outline: none;
+    width: 286px;
+    }
+
+}

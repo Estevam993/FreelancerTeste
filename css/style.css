@@ -1,3 +1,41 @@
+body.loginBody {
+  backdrop-filter: blur(15px);
+}
+
+.loginBox {
+  width: 500px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+.loginBox:hover {
+  transform: scale(1.03);
+  background-color: rgba(39, 39, 39, 0.733);
+}
+
+#inputsLogin {
+  min-height: 27vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#inputsLogin #password {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+  outline: none;
+  width: 286px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +44,13 @@
 
 body {
   background-image: url("../images/background1920.png");
-  height: 100%;
-  backdrop-filter: blur(15px);
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #headerIndex {
@@ -38,17 +81,32 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 8px;
+}
+#headerIndex #login a {
+  text-decoration: none;
+  color: white;
+}
+#headerIndex #login a:hover {
+  color: black;
+}
+#headerIndex #cadastro a {
+  text-decoration: none;
+  color: white;
+}
+#headerIndex #cadastro a:hover {
+  color: black;
 }
 
 #container {
   display: flex;
-  margin-top: 20px;
   color: white;
-  margin-bottom: 215px;
+  justify-content: center;
+  align-items: center;
 }
 
 #content {
-  background-color: rgba(39, 39, 39, 0.733);
+  background-color: rgba(0, 0, 0, 0.733);
   width: 900px;
   height: 620px;
   display: block;
@@ -57,6 +115,7 @@ body {
 }
 #content:hover {
   transform: scale(1.03);
+  background-color: rgba(39, 39, 39, 0.733);
 }
 
 .market1 {
@@ -161,6 +220,11 @@ body {
 }
 #footerIndex:hover {
   background-color: rgba(145, 145, 145, 0.397);
+}
+
+.logo i {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
