@@ -180,9 +180,6 @@ body {
   background-color: rgba(0, 0, 0, 0.753);
   transition: 0.2s;
 }
-#buttons:hover {
-  background-color: rgba(145, 145, 145, 0.397);
-}
 #buttons #login {
   width: 91.23px;
 }

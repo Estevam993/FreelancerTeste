@@ -77,9 +77,6 @@ body{
     left: 95%;
     background-color: $header-color;
     transition: 0.2s;
-    &:hover{
-        background-color: $header-color-pointer;
-    }
 
     #login{
         width: 91.23px;
