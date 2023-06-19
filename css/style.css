@@ -349,32 +349,30 @@ body {
     margin: 20px;
   }
 }
-
-@media (max-width: 380px) {
-  #info1 h4 {
+@media (max-width: 400px) {
+  #container #info1 h4 {
     font-size: 15pt;
   }
-  #info2 h4 {
+  #container #info2 h4 {
     font-size: 15pt;
   }
 }
-@media (max-width: 320px) {
-  #info1 h4 {
+@media (max-width: 374px) {
+  #container #info1 h4 {
     font-size: 13pt;
   }
-  #info2 h4 {
+  #container #info2 h4 {
     font-size: 14pt;
   }
 }
-#basic-Email {
+#container #basic-Email {
   background-color: transparent;
   color: white;
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid white;
 }
-
-#email {
+#container #email {
   background-color: transparent;
   color: white;
   border: none;
@@ -384,25 +382,23 @@ body {
   width: 275px;
 }
 @media (max-width: 480px) {
-  #email {
+  #container #email {
     width: 175px;
   }
 }
 @media (max-width: 330px) {
-  #email {
+  #container #email {
     width: 130px;
   }
 }
-
-#basic-Message {
+#container #basic-Message {
   background-color: transparent;
   color: white;
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid white;
 }
-
-#message {
+#container #message {
   background-color: transparent;
   color: white;
   border: none;
@@ -412,12 +408,12 @@ body {
   width: 250px;
 }
 @media (max-width: 480px) {
-  #message {
+  #container #message {
     width: 150px;
   }
 }
 @media (max-width: 330px) {
-  #message {
+  #container #message {
     width: 105px;
   }
 }
@@ -432,6 +428,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   transition: 0.4s;
+  position: block;
 }
 #footerIndex:hover {
   background-color: rgba(145, 145, 145, 0.397);
@@ -440,6 +437,11 @@ body {
   #footerIndex {
     height: 50px;
     margin-top: 20px;
+  }
+}
+@media (max-height: 800px) {
+  #footerIndex {
+    display: none;
   }
 }
 

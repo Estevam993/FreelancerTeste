@@ -69,6 +69,7 @@ body{
             display: none;
         }
     }
+
 }
 #buttons{
     display: none;
@@ -220,72 +221,72 @@ body{
             
         }
     }
+    @media (max-width: 400px){
+        #info1 h4{
+            font-size: 15pt;
+        }
+        #info2 h4{
+            font-size: 15pt;
+        }
+    }
+    @media (max-width: 374px){
+        #info1 h4{
+            font-size: 13pt;
+        }
+        #info2 h4{
+            font-size: 14pt;
+        }
+    }
     
-}
-
-@media (max-width: 380px){
-    #info1 h4{
-        font-size: 15pt;
+    #basic-Email{
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid white ;
     }
-    #info2 h4{
-        font-size: 15pt;
-    }
-}
-@media (max-width: 320px){
-    #info1 h4{
-        font-size: 13pt;
-    }
-    #info2 h4{
-        font-size: 14pt;
-    }
-}
-
-#basic-Email{
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 1px solid white ;
-}
-#email{
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 1px solid white ;
-    outline: none;
-    width: 275px;
-    @media (max-width: 480px){
-        width: 175px;
-    }
-    @media (max-width: 330px){
-        width: 130px;
-    }
-
-}
-#basic-Message{
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 1px solid white ;
+    #email{
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid white ;
+        outline: none;
+        width: 275px;
+        @media (max-width: 480px){
+            width: 175px;
+        }
+        @media (max-width: 330px){
+            width: 130px;
+        }
     
-
-}
-#message{
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 1px solid white ;
-    outline: none;
-    width: 250px;
-    @media (max-width: 480px){
-        width: 150px;
     }
-    @media (max-width: 330px){
-        width: 105px;
+    #basic-Message{
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid white ;
+        
+    
     }
+    #message{
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid white ;
+        outline: none;
+        width: 250px;
+        @media (max-width: 480px){
+            width: 150px;
+        }
+        @media (max-width: 330px){
+            width: 105px;
+        }
+    }
+    
+    
 }
 
 
@@ -299,12 +300,16 @@ body{
     align-items: center;
     flex-wrap: wrap;
     transition: 0.4s;
+    position: block;
     &:hover{
         background-color: $header-color-pointer;
     }
     @media (max-width: 480px){
         height: 50px;
         margin-top: 20px;
+    }
+    @media (max-height: 800px){
+        display: none;
     }
 }
 
