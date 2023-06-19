@@ -223,6 +223,23 @@ body{
     
 }
 
+@media (max-width: 380px){
+    #info1 h4{
+        font-size: 15pt;
+    }
+    #info2 h4{
+        font-size: 15pt;
+    }
+}
+@media (max-width: 320px){
+    #info1 h4{
+        font-size: 13pt;
+    }
+    #info2 h4{
+        font-size: 14pt;
+    }
+}
+
 #basic-Email{
     background-color: transparent;
     color: white;
@@ -240,6 +257,9 @@ body{
     width: 275px;
     @media (max-width: 480px){
         width: 175px;
+    }
+    @media (max-width: 330px){
+        width: 130px;
     }
 
 }
@@ -262,6 +282,9 @@ body{
     width: 250px;
     @media (max-width: 480px){
         width: 150px;
+    }
+    @media (max-width: 330px){
+        width: 105px;
     }
 }
 

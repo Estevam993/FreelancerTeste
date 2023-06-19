@@ -64,6 +64,11 @@ body.loginBody {
     width: 185px;
   }
 }
+@media (max-width: 330px) {
+  #inputsLogin #password {
+    width: 145px;
+  }
+}
 
 body.loginBody {
   backdrop-filter: blur(15px);
@@ -91,6 +96,11 @@ body.loginBody {
     width: 105px;
   }
 }
+@media (max-width: 330px) {
+  #username {
+    width: 65px;
+  }
+}
 
 #Cpassword {
   background-color: transparent;
@@ -104,6 +114,11 @@ body.loginBody {
 @media (max-width: 480px) {
   #Cpassword {
     width: 87px;
+  }
+}
+@media (max-width: 330px) {
+  #Cpassword {
+    width: 47px;
   }
 }
 
@@ -335,6 +350,22 @@ body {
   }
 }
 
+@media (max-width: 380px) {
+  #info1 h4 {
+    font-size: 15pt;
+  }
+  #info2 h4 {
+    font-size: 15pt;
+  }
+}
+@media (max-width: 320px) {
+  #info1 h4 {
+    font-size: 13pt;
+  }
+  #info2 h4 {
+    font-size: 14pt;
+  }
+}
 #basic-Email {
   background-color: transparent;
   color: white;
@@ -355,6 +386,11 @@ body {
 @media (max-width: 480px) {
   #email {
     width: 175px;
+  }
+}
+@media (max-width: 330px) {
+  #email {
+    width: 130px;
   }
 }
 
@@ -378,6 +414,11 @@ body {
 @media (max-width: 480px) {
   #message {
     width: 150px;
+  }
+}
+@media (max-width: 330px) {
+  #message {
+    width: 105px;
   }
 }
 

@@ -20,6 +20,9 @@ body.loginBody{
         @media (max-width: 480px){
             width: 105px;
         }
+        @media (max-width: 330px){
+            width: 65px;
+        }
     }
 
     #Cpassword{
@@ -32,5 +35,8 @@ body.loginBody{
         width: 188px;
             @media (max-width: 480px){
                 width: 87px;
+            }
+            @media (max-width: 330px){
+                width: 47px;
             }
     }
