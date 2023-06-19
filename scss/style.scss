@@ -15,20 +15,12 @@ body{
     background-image: url("../images/background1920.png");
     
 }
-@media (max-width:1120px){
-    body{
-        background-image: url("../images/background/background1440");
-    }
-    body.loginBody{
-        background-image: url("../images/background/background1440");
-    }
-}
 @media (max-width:780px) {
     body{
-        background-image: url("../images/background/background780");
+        background-image: url("../images/background780.png");
     }
     body.loginBody{
-        background-image: url("../images/background/background780");
+        background-image: url("../images/background780.png");
     }
 }
 .main{
@@ -38,11 +30,13 @@ body{
     justify-content: space-between;
 }
 #headerIndex{
+    width: 100%;
     position: static;
     color: white;
-    width: 100%;
+    width: auto;
     height: 65px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: $header-color;
     align-items: center;
@@ -50,6 +44,7 @@ body{
     transition: 0.4s;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+
     &:hover{
         background-color: $header-color-pointer;
     }
@@ -65,53 +60,33 @@ body{
         color: white;
         text-decoration: none;
     }
+    @media (max-width: 480px){
+        .logo{
+            font-size: 30pt;
+            padding-left: 3%;
+        }
+        .title{
+            display: none;
+        }
+    }
 }
 #buttons{
-    width: 200px;
     display: none;
-    flex-wrap: wrap;
     position: fixed;
-    top: 65px;
-    left: 1720px;
-    gap: 8px;
+    top: 66px;
+    left: 95%;
     background-color: $header-color;
     transition: 0.2s;
-
-    margin-right: auto;
     &:hover{
         background-color: $header-color-pointer;
     }
-    @media (max-width:1820px ){
-        left: 1620px;
-    }
-    @media (max-width:1720px ){
-        left: 1520px;
-    }
-    @media (max-width:1620px ){
-        left: 1420px;
-    }
-    @media (max-width:1520px ){
-        left: 1320px;
-    }
-    @media (max-width:1420px ){
-        left: 1220px;
-    }
-    @media (max-width:1320px ){
-        left: 1120px;
-    }
-    @media (max-width:1220px ){
-        left: 1020px;
-    }
-    @media (max-width:1120px ){
-        left: 920px;
-    }
-    @media(max-width: 920px){
 
+    #login{
+        width: 91.23px;
     }
-
-
-
-
+    #cadastro{
+        width: 91.23px;
+    }
     #login a{
         text-decoration: none;
         color: white;
@@ -125,6 +100,22 @@ body{
         &:hover{
             color:black;
         }
+    }
+    @media (max-width: 1480px){
+        left: 93.5%;
+    }
+    @media (max-width: 1280px){
+        left: 92.5%;
+    }
+    @media (max-width: 1080px){
+        left: 91.5%;
+    }
+    @media(max-width: 780px){
+        left: 81.5%;
+    }
+    @media(max-width: 480px){
+        position: fixed;
+        left: 74.5%;
     }
 
 
@@ -141,16 +132,33 @@ body{
         display: block;
         border-radius: 50px;
         transition: 0.3s;
+        @media (max-width:780px) {
+                .market1{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .market2{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                background-color: rgba(255, 255, 255, 0);
+        }
+
         &:hover{
             transform: scale(1.03);
             background-color:rgba(39, 39, 39, 0.733);
+            @media (max-width:780px){
+                transform: scale(1.00);
+                background-color: rgba(255, 255, 255, 0);
+            }
         }
         .market1{
             height: 350px;
             display: flex;
             justify-content: space-evenly;
-            align-items: center;
             padding: 20px;
+
         }
         #info1{
             border: 1px solid white;
@@ -161,11 +169,20 @@ body{
             &:hover{
                 transform: scale(1.03);
             }
+
+            @media (max-width: 480px){
+                width: 90%;
+                margin: 20px;
+            }
         }
         .img1{
             width: 300px;
             height: 250px;
             padding-bottom: 10px;
+            @media (max-width: 480px){
+                display: none;
+            }
+            
         }
         
         .market2{
@@ -173,6 +190,7 @@ body{
             display: flex;
             justify-content: space-evenly;
             padding: 35px;
+            
         }
         #info2{
             border: 1px solid white;
@@ -180,23 +198,27 @@ body{
             height: 150px;
             width: 400px;
             transition: 0.2s;
+            @media (max-width: 480px){
+                width: 90%;
+                margin: 20px;
+            }
             &:hover{
                 transform: scale(1.03);
             }
         }
-        
-        
-        .enviar{
-            justify-content: end;
+        #inputs{
+            height: 400px;
+            width: 400px;
+            display: block;
+            @media (max-width: 480px){
+                width: 90%;
+                margin: 20px;
+            }
         }
     }
     
 }
-#inputs{
-    height: 400px;
-    width: 400px;
-    display: block;
-}
+
 #basic-Email{
     background-color: transparent;
     color: white;
@@ -234,7 +256,6 @@ body{
 
 
 #footerIndex{
-
     color: white;
     width: 100%;
     height: 65px;
@@ -247,6 +268,9 @@ body{
     &:hover{
         background-color: $header-color-pointer;
     }
-
+    @media (max-width: 480px){
+        height: 50px;
+        margin-top: 20px;
+    }
 }
 

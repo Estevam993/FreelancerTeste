@@ -86,20 +86,12 @@ body {
   background-image: url("../images/background1920.png");
 }
 
-@media (max-width: 1120px) {
-  body {
-    background-image: url("../images/background/background1440");
-  }
-  body.loginBody {
-    background-image: url("../images/background/background1440");
-  }
-}
 @media (max-width: 780px) {
   body {
-    background-image: url("../images/background/background780");
+    background-image: url("../images/background780.png");
   }
   body.loginBody {
-    background-image: url("../images/background/background780");
+    background-image: url("../images/background780.png");
   }
 }
 .main {
@@ -110,11 +102,13 @@ body {
 }
 
 #headerIndex {
+  width: 100%;
   position: static;
   color: white;
-  width: 100%;
+  width: auto;
   height: 65px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.753);
   align-items: center;
@@ -137,61 +131,32 @@ body {
   color: white;
   text-decoration: none;
 }
+@media (max-width: 480px) {
+  #headerIndex .logo {
+    font-size: 30pt;
+    padding-left: 3%;
+  }
+  #headerIndex .title {
+    display: none;
+  }
+}
 
 #buttons {
-  width: 200px;
   display: none;
-  flex-wrap: wrap;
   position: fixed;
-  top: 65px;
-  left: 1720px;
-  gap: 8px;
+  top: 66px;
+  left: 95%;
   background-color: rgba(0, 0, 0, 0.753);
   transition: 0.2s;
-  margin-right: auto;
 }
 #buttons:hover {
   background-color: rgba(145, 145, 145, 0.397);
 }
-@media (max-width: 1820px) {
-  #buttons {
-    left: 1620px;
-  }
+#buttons #login {
+  width: 91.23px;
 }
-@media (max-width: 1720px) {
-  #buttons {
-    left: 1520px;
-  }
-}
-@media (max-width: 1620px) {
-  #buttons {
-    left: 1420px;
-  }
-}
-@media (max-width: 1520px) {
-  #buttons {
-    left: 1320px;
-  }
-}
-@media (max-width: 1420px) {
-  #buttons {
-    left: 1220px;
-  }
-}
-@media (max-width: 1320px) {
-  #buttons {
-    left: 1120px;
-  }
-}
-@media (max-width: 1220px) {
-  #buttons {
-    left: 1020px;
-  }
-}
-@media (max-width: 1120px) {
-  #buttons {
-    left: 920px;
-  }
+#buttons #cadastro {
+  width: 91.23px;
 }
 #buttons #login a {
   text-decoration: none;
@@ -206,6 +171,32 @@ body {
 }
 #buttons #cadastro a:hover {
   color: black;
+}
+@media (max-width: 1480px) {
+  #buttons {
+    left: 93.5%;
+  }
+}
+@media (max-width: 1280px) {
+  #buttons {
+    left: 92.5%;
+  }
+}
+@media (max-width: 1080px) {
+  #buttons {
+    left: 91.5%;
+  }
+}
+@media (max-width: 780px) {
+  #buttons {
+    left: 81.5%;
+  }
+}
+@media (max-width: 480px) {
+  #buttons {
+    position: fixed;
+    left: 74.5%;
+  }
 }
 
 #container {
@@ -222,15 +213,33 @@ body {
   border-radius: 50px;
   transition: 0.3s;
 }
+@media (max-width: 780px) {
+  #container #content {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #container #content .market1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #container #content .market2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #container #content:hover {
   transform: scale(1.03);
   background-color: rgba(39, 39, 39, 0.733);
+}
+@media (max-width: 780px) {
+  #container #content:hover {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 #container #content .market1 {
   height: 350px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   padding: 20px;
 }
 #container #content #info1 {
@@ -243,10 +252,21 @@ body {
 #container #content #info1:hover {
   transform: scale(1.03);
 }
+@media (max-width: 480px) {
+  #container #content #info1 {
+    width: 90%;
+    margin: 20px;
+  }
+}
 #container #content .img1 {
   width: 300px;
   height: 250px;
   padding-bottom: 10px;
+}
+@media (max-width: 480px) {
+  #container #content .img1 {
+    display: none;
+  }
 }
 #container #content .market2 {
   height: 350px;
@@ -261,17 +281,25 @@ body {
   width: 400px;
   transition: 0.2s;
 }
+@media (max-width: 480px) {
+  #container #content #info2 {
+    width: 90%;
+    margin: 20px;
+  }
+}
 #container #content #info2:hover {
   transform: scale(1.03);
 }
-#container #content .enviar {
-  justify-content: end;
-}
-
-#inputs {
+#container #content #inputs {
   height: 400px;
   width: 400px;
   display: block;
+}
+@media (max-width: 480px) {
+  #container #content #inputs {
+    width: 90%;
+    margin: 20px;
+  }
 }
 
 #basic-Email {
@@ -323,6 +351,12 @@ body {
 }
 #footerIndex:hover {
   background-color: rgba(145, 145, 145, 0.397);
+}
+@media (max-width: 480px) {
+  #footerIndex {
+    height: 50px;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
