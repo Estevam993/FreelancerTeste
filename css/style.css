@@ -26,6 +26,22 @@ body.loginBody {
   transform: scale(1.03);
   background-color: rgba(39, 39, 39, 0.733);
 }
+@media (max-width: 780px) {
+  .loginBox:hover {
+    transform: scale(1);
+  }
+}
+@media (max-width: 480px) {
+  .loginBox:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@media (max-width: 480px) {
+  .loginBox {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+  }
+}
 
 #inputsLogin {
   min-height: 27vh;
@@ -42,6 +58,11 @@ body.loginBody {
   border-bottom: 1px solid white;
   outline: none;
   width: 286px;
+}
+@media (max-width: 480px) {
+  #inputsLogin #password {
+    width: 185px;
+  }
 }
 
 body.loginBody {
@@ -65,6 +86,11 @@ body.loginBody {
   outline: none;
   width: 205px;
 }
+@media (max-width: 480px) {
+  #username {
+    width: 105px;
+  }
+}
 
 #Cpassword {
   background-color: transparent;
@@ -74,6 +100,11 @@ body.loginBody {
   border-bottom: 1px solid white;
   outline: none;
   width: 188px;
+}
+@media (max-width: 480px) {
+  #Cpassword {
+    width: 87px;
+  }
 }
 
 * {
@@ -185,6 +216,11 @@ body {
 @media (max-width: 1080px) {
   #buttons {
     left: 91.5%;
+  }
+}
+@media (max-width: 880px) {
+  #buttons {
+    left: 89.5%;
   }
 }
 @media (max-width: 780px) {
@@ -319,6 +355,11 @@ body {
   outline: none;
   width: 275px;
 }
+@media (max-width: 480px) {
+  #email {
+    width: 175px;
+  }
+}
 
 #basic-Message {
   background-color: transparent;
@@ -336,6 +377,11 @@ body {
   border-bottom: 1px solid white;
   outline: none;
   width: 250px;
+}
+@media (max-width: 480px) {
+  #message {
+    width: 150px;
+  }
 }
 
 #footerIndex {

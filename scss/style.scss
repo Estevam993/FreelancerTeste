@@ -110,6 +110,10 @@ body{
     @media (max-width: 1080px){
         left: 91.5%;
     }
+    @media (max-width: 880px){
+        left: 89.5%;
+    }
+    
     @media(max-width: 780px){
         left: 81.5%;
     }
@@ -214,6 +218,9 @@ body{
                 width: 90%;
                 margin: 20px;
             }
+            
+                
+            
         }
     }
     
@@ -234,6 +241,9 @@ body{
     border-bottom: 1px solid white ;
     outline: none;
     width: 275px;
+    @media (max-width: 480px){
+        width: 175px;
+    }
 
 }
 #basic-Message{
@@ -242,6 +252,7 @@ body{
     border: none;
     border-radius: 0px;
     border-bottom: 1px solid white ;
+    
 
 }
 #message{
@@ -252,6 +263,9 @@ body{
     border-bottom: 1px solid white ;
     outline: none;
     width: 250px;
+    @media (max-width: 480px){
+        width: 150px;
+    }
 }
 
 

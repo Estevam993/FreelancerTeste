@@ -25,6 +25,16 @@ body.loginBody{
     &:hover{
         transform: scale(1.03);
         background-color:rgba(39, 39, 39, 0.733);
+        @media (max-width:780px){
+            transform: scale(1.0);
+        }
+        @media (max-width:480px){
+            background-color: rgba(0, 0, 0, 0);;
+        }
+    }
+    @media (max-width:480px){
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
     }
 }
 
@@ -43,6 +53,9 @@ body.loginBody{
     border-bottom: 1px solid white ;
     outline: none;
     width: 286px;
+        @media (max-width: 480px){
+            width: 185px;
+        }
     }
 
 }

@@ -17,6 +17,9 @@ body.loginBody{
     border-bottom: 1px solid white ;
     outline: none;
     width: 205px;
+        @media (max-width: 480px){
+            width: 105px;
+        }
     }
 
     #Cpassword{
@@ -27,4 +30,7 @@ body.loginBody{
         border-bottom: 1px solid white ;
         outline: none;
         width: 188px;
+            @media (max-width: 480px){
+                width: 87px;
+            }
     }
